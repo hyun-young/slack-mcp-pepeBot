@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "slack-mcp": {
+      "command": "python",
+      "args": ["slack_mcp_server.py"],
+      "cwd": "C:\\python_workplace\\assignment1\\slack-mcp",
+      "env": {
+        "SLACK_BOT_TOKEN": "실제-슬랙-봇-토큰으로-교체",
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONLEGACYWINDOWSSTDIO": "utf-8"
+      }
+    }
+  }
+} 

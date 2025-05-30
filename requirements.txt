@@ -1,0 +1,23 @@
+# Slack MCP Server Dependencies
+# Python >= 3.10 required
+
+# Core MCP framework
+fastmcp==2.5.1
+
+# HTTP requests for Slack API
+requests==2.32.3
+
+# Environment variable management
+python-dotenv==1.1.0
+
+# Web GUI interface (will be added)
+# streamlit>=1.45.1
+
+# Core dependencies automatically installed
+pydantic==2.11.5
+pydantic-core==2.33.2
+httpx==0.28.1
+anyio==4.9.0
+rich==14.0.0
+typer==0.16.0
+uvicorn==0.34.2 

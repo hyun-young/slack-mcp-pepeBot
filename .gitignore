@@ -1,0 +1,114 @@
+# 🐸 Pepe Bot Slack MCP Server .gitignore
+
+# 🔐 환경변수 및 보안 파일
+.env
+.env.local
+.env.production
+.env.staging
+*.pem
+*.key
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 🧪 테스트 관련
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# 📦 의존성 관리
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 🔧 IDE 및 에디터
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 📝 로그 파일
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🌐 Node.js (MCP Inspector 관련)
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log*
+
+# 📊 데이터베이스
+*.db
+*.sqlite
+*.sqlite3
+
+# 🎯 임시 파일
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# 🔄 시스템 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 🚫 민감한 설정 파일
+config/production.json
+config/staging.json
+secrets/
+credentials/
+
+# 📸 임시 업로드 파일
+uploads/
+temp_files/
+test_uploads/
+
+# 🐸 Pepe Bot 특정 제외 항목
+# 실제 토큰이 포함된 설정 파일들
+claude_desktop_config_real.json
+mcp_config_real.json
+
+# 테스트 파일들 (선택적)
+# test.txt
+# test_pepe.jpeg 

@@ -1,0 +1,79 @@
+{
+  "name": "slack-mcp",
+  "description": "Slack API를 활용한 MCP 서버",
+  "version": "1.0.0",
+  "server": {
+    "command": "python",
+    "args": ["slack_mcp_server.py"],
+    "cwd": "C:/python_workplace/assignment1/slack-mcp",
+    "env": {
+      "PYTHONPATH": "C:/python_workplace/assignment1/slack-mcp"
+    }
+  },
+  "tools": [
+    {
+      "name": "send_slack_message",
+      "description": "지정된 Slack 채널에 메시지를 전송합니다",
+      "parameters": {
+        "channel": {
+          "type": "string",
+          "description": "채널 ID 또는 채널명 (예: #general, C1234567890)"
+        },
+        "text": {
+          "type": "string", 
+          "description": "전송할 메시지 내용 (UTF-8 인코딩 한글 지원)"
+        }
+      }
+    },
+    {
+      "name": "get_slack_channels",
+      "description": "접근 가능한 모든 Slack 채널 목록을 조회합니다",
+      "parameters": {}
+    },
+    {
+      "name": "get_slack_channel_history",
+      "description": "지정된 채널의 최근 메시지 히스토리를 조회합니다",
+      "parameters": {
+        "channel_id": {
+          "type": "string",
+          "description": "조회할 채널의 ID"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "조회할 메시지 수 (기본값: 10, 최대: 100)",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      }
+    },
+    {
+      "name": "send_slack_direct_message", 
+      "description": "특정 사용자에게 1:1 다이렉트 메시지를 전송합니다",
+      "parameters": {
+        "user_id": {
+          "type": "string",
+          "description": "메시지를 받을 사용자의 ID"
+        },
+        "text": {
+          "type": "string",
+          "description": "전송할 메시지 내용"
+        }
+      }
+    },
+    {
+      "name": "invite_user_to_channel",
+      "description": "지정된 채널에 사용자를 초대합니다",
+      "parameters": {
+        "channel_id": {
+          "type": "string", 
+          "description": "초대할 채널의 ID"
+        },
+        "user_id": {
+          "type": "string",
+          "description": "초대할 사용자의 ID"
+        }
+      }
+    }
+  ]
+} 
